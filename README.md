@@ -7,21 +7,14 @@
 
 ## 目录结构
 - data：用于存放数据处理及可视化项目的原数据文件
-    - 本目录下共三个子路径，分别存放焦虑症患病率、学生焦虑抑郁群体的聊天记录、焦虑患者压力量表数据。
+    - 本目录下共四个子路径，分别存放四组不同的数据集。
     - 数据来源：
         - 焦虑症患病率数据集：https://www.kaggle.com/datasets/jaffidantonio/prevalence-of-anxiety-disorders-1990-to-2019?resource=download
         - 学生焦虑抑郁聊天记录数据集：https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset
-        - 焦虑患者压力量表数据集：https://www.kaggle.com/datasets/josephwillard/anxiety-stress-test-data
+        - 影响精神健康的因素数据集：https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset/data
+        - 关于心理健康问题防治措施和解决方案的数据集：https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 - py：用于存放数据处理及可视化所用的代码文件
     - 本目录下共两个子目录，分别用于存放python源文件和jupyter notebook文件。
-    - 运行环境要求：
-        - python 3.x
-        - pandas 
-        - numpy 
-        - matplotlib 
-        - pyecharts 
-        - jupyter notebook 
-        - wordcloud
 - main：用于存放可视化结果文档及数据分析报告文件
 
 ## 运行和使用说明
