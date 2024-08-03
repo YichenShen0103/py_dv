@@ -15,6 +15,7 @@
         - 关于心理健康问题防治措施和解决方案的数据集：https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 - py：用于存放数据处理及可视化所用的代码文件
     - 本目录下共两个子目录，分别用于存放python源文件和jupyter notebook文件。
+    - 注意：本项目使用的pyecharts的版本位1.8.1，请确保安装正确版本。
 - main：用于存放可视化结果文档及数据分析报告文件
 
 ## 运行和使用说明
