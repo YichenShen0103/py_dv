@@ -11,7 +11,7 @@
     - 数据来源：
         - 焦虑症患病率数据集：https://www.kaggle.com/datasets/jaffidantonio/prevalence-of-anxiety-disorders-1990-to-2019?resource=download
         - 学生焦虑抑郁聊天记录数据集：https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset
-        - 影响精神健康的因素数据集：https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset/data
+        - 影响精神健康的因素数据集：https://www.kaggle.com/datasets/mdismielhossenabir/psychosocial-mental-health-analysis
         - 关于心理健康问题防治措施和解决方案的数据集：https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 - py：用于存放数据处理及可视化所用的代码文件
     - 本目录下共两个子目录，分别用于存放python源文件和jupyter notebook文件。
