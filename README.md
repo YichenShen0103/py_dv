@@ -21,7 +21,7 @@
 ## 运行和使用说明
 确保安装git和其他必要运行环境的情况下，使用命令：
 
-    git clone https://github.com/YichenShen0103/py_assignment.git
+    git clone https://github.com/YichenShen0103/py_dv.git
 
 并运行py目录下的所有python源文件或jupyter notebook文件（任选其一）即可。
 
