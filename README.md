@@ -15,7 +15,7 @@
         - 关于心理健康问题防治措施和解决方案的数据集：https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 - py：用于存放数据处理及可视化所用的代码文件
     - 本目录下共两个子目录，分别用于存放python源文件和jupyter notebook文件。
-    - 注意：本项目使用的pyecharts的版本位1.8.1，请确保安装正确版本。
+    - 注意：本项目使用的pyecharts的版本为1.8.1，请确保安装正确版本。
 - main：用于存放可视化结果文档及数据分析报告文件
 
 ## 运行和使用说明
@@ -23,11 +23,11 @@
 
 ``git clone https://github.com/YichenShen0103/py_assignment.git``
 
-并运行py目录下的所有python源文件和jupyter notebook文件即可。
+并运行py目录下的所有python源文件或jupyter notebook文件（任选其一）即可。
 
 运行结果位于自动生成的/result路径中，不会覆盖/main中的示例文件。
 
-注意：本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud等运行环境。
+注意：本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud、nltk、textblob等运行环境。
 
 ## 声明
 本项目自2024年8月20日起停止更新。
