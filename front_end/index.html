@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>数据故事化</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script async type="text/javascript" src="js/jquery.min.js"></script>
+    <script async type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p class="logo">数据故事化</p>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a class="active" href="#section1">趋势</a></li>
+          <li><a class="active" href="#section2">洞察</a></li>
+          <li><a class="active" href="#section3">未来</a></li>
+          <li><a class="active" href="#section4">关于</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <a id="gotop" href="#">
+          <span>▲</span>
+        </a>
+      </div>
+
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+
+      <div class="content">
+        <div id="header">
+          <p>“昨天我感觉我担心的要死了，我的生活已经僵硬了，一遍又一遍。”</p>
+          <p>“我像是中毒了一样，每天晚上都害怕忘记了什么。”</p>
+          <p>“这让我感到头疼，就像是受伤了一样。”</p>
+          <p>“我感觉好难过，就像心碎了一样，但我甚至找不到原因！”</p>
+          <p>“哦，我的天哪！”</p>
+        </div>
+        <p>
+          这些文字看上去有些荒诞，但这却是美国一个真实的焦虑症患者和他最亲密的朋友的聊天记录，这里记录着他的心声。
+        </p>
+
+        <p>
+          焦虑，或者扩大了说，心理健康问题，已经离我们每一个人越来越近。
+          文明助力人类建起了规模空前的大型城市，恢弘的摩天大楼，然而——
+        </p>
+
+        <h1 class="title overall-title">高塔下的阴影里，光明未曾到达</h1>
+
+        <p>
+          一篇发表在医学界最具影响力的期刊——《柳叶刀》上的
+          <a
+            class="link"
+            href="https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(18)30511-X/abstract"
+            target="_blank"
+            >调查<sup>1</sup></a
+          >显示，
+          随着经济的发展，步入二十一世纪后全球精神疾病的发病率有显著上升的趋势，
+          其中仅看中国的精神疾病终身发病率就达到了为
+          <span class="stressed red">13.2%</span>，
+          按这个比例来推算，我国15岁以上人口中，各类精神疾病患者人数已经超过了
+          <span class="stressed red">1亿人</span>。 同时，美国医学会的
+          <a
+            class="link"
+            href="https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2110027"
+            target="_blank"
+            >研究<sup>2</sup></a
+          >表明，精神疾病患者的死亡率明显高于普通人，潜在的寿命损失达到了
+          <span class="stressed red">10年</span>。 同时据估计，全球
+          <span class="stressed red">14.3%</span>的死亡，即每年约
+          <span class="stressed red">800万例</span>死亡，可归因于精神疾病。
+        </p>
+
+        <p>
+          精神障碍就像来自我们无法揣测的世界的魔鬼，人类越是企图摆脱来自物质的拘束，他就越是贪婪的侵蚀，
+          随时准备吞没每一个越来越渺小的人，犹如
+          <span class="stressed red">等价交换</span
+          >般，注定了你我作为祭品的命运，他说：
+        </p>
+
+        <p id="section1">
+          <br />
+        </p>
+
+        <h1 class="title">(一) 你只可到这里，不能越过。</h1>
+
+        <p>
+          那么，精神疾病的发病真的有那么神秘吗？或许也只有从数据中，我们能窥得一些奥秘。
+        </p>
+        <div>
+          <iframe
+            src="/main/gdp.html"
+            scrolling="no"
+            align="left"
+            width="50%"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            src="/main/map.html"
+            scrolling="no"
+            align="right"
+            width="50%"
+            loading="lazy"
+            >></iframe
+          >
+        </div>
+
+        <p>
+          右边的这一幅是全球焦虑症患病率的热力地图，
+          不难发现，焦虑症的患病率似乎和经济发展有着千丝万缕的关系，越发达的地区，象征着焦虑和抑郁的红色就越是频繁的出现。
+          欧洲、美国、巴西、阿拉伯国家、澳洲，这些往往被我们称为
+          <span class="stressed red"
+            >经济发达地区的国家却成了精神疾病的肆虐地</span
+          >
+          。而透过左侧的这幅散点图，这种关联被更直观的展现出来，伴随着GDP的攀升，焦虑症的发病率也随之一点一点地发生着增长。
+        </p>
+
+        <p>
+          如果说GDP和焦虑症发病率的关系没有那么明显，那么性别与焦虑症发病率的关系显得更加神秘而又值得深思。
+        </p>
+
+        <p>
+          在下面这幅图中，代表女性焦虑症发病率的红点比代表男性发病率的灰黑色点高出了不止一个档次。
+          作为东西方世界的代表国家，无论在中国还是在美国，女性的焦虑症发病率似乎都比男性
+          <span class="stressed red">高出接近一倍</span>。
+        </p>
+
+        <iframe
+          class="center-iframe"
+          src="/main/gender.html"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+
+        <p>
+          一项由北京大学第六医院等44个单位，历经3年多的时间完成的调研项目也显示，女性的抑郁症发病率显著高于男性。
+          对此，发表在《神经医学前沿》期刊上的一项<a
+            class="link"
+            href="https://www.sciencedirect.com/science/article/abs/pii/S030100821830087X"
+            target="_blank"
+            >科研<sup>3</sup></a
+          >指出，从一般生物学角度，
+          男女性之间的基因表达模式、神经解剖结构和神经可塑性以及免疫特征之间的差别都导致了女性更容易患精神疾病，
+          特别是严重精神疾病； 另外女性围产期的独特心理周期也是重要的因素。
+        </p>
+
+        <p>
+          除开GDP和性别之外，年龄也是重要的影响精神疾病发病率的因素。在下图中展示的便是中美两国各个年龄段焦虑症发病率。
+        </p>
+
+        <iframe
+          class="center-iframe"
+          src="/main/age.html"
+          width="150%"
+          height="600px"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+
+        <p>
+          可以看到，不同的国家集中发病的年龄段也有所不同，
+          中国焦虑发病率在青少年时期多发，随着30岁后年龄的增长再次呈现
+          美国焦虑症发病率则在年龄分布上呈现随年龄先上升后下降的趋势，在40岁左右达到最大值。
+          这种国家间的差异，年龄间的差异往往难以用生物学或者医学解释，学界认为这可能与
+          <span class="stressed red">各文化之间差异有关</span>。
+        </p>
+
+        <p id="section2">
+          <br />
+        </p>
+
+        <h1 class="title">(二) 那些溺死的星星所告诉我的</h1>
+        <p>
+          还记开篇提到的那位焦虑症患者的聊天记录吗，如果我说你所看到的只是
+          <span class="stressed red">3000多条</span>聊天记录中的一部分呢？
+          如果我说你所看到的3000多条聊天记录也只是
+          <span class="stressed red">为数不多</span
+          >的几位精神障碍患者的一部分聊天记录呢？
+          我们难以想象精神疾病患者在经历了怎样窒息般的煎熬，他们的人生本该如天上的星星一般璀璨。
+        </p>
+
+        <div class="image-container">
+          <img
+            data-src="/img/wordcloud.png"
+            src="/img/loading.gif"
+            alt="焦虑症患者聊天记录词云图"
+          />
+        </div>
+
+        <p>
+          这是用他们的聊天记录所制成的一幅词云图，映入眼帘的便是
+          <span class="stressed red"
+            >“失眠”、“累”、“焦虑”、“害怕”、“时间”、“人们”</span
+          >等字样， 而这些零散的词汇背后，却是每一个患者真真切切经历过的
+          <span class="stressed red">恐惧与挣扎</span>。
+        </p>
+
+        <p>
+          或许有人发现了，这些词语背后都隐藏着一个共同的主旋律——<span
+            class="stressed red"
+            >压力</span
+          >，而这似乎就成了解释一切的关键。 为什么经济越发达的地方的人们越焦虑？
+          为什么女性比男性有着更高的患病几率？
+          为什么青少年和中年的精神状态比其他年龄区间更加脆弱？
+          归根结底，是这些群体特有的压力。
+          <span class="stressed red"
+            >工作上的压力、生活中的压力、家庭里的压力、学业压力、上有老下有小的压力，甚至是来自文化和整个社会的压力，
+            他们并不是不够坚强，只是承受的太多。</span
+          >
+        </p>
+
+        <p>
+          我们找到了一份记录了95位在专业医疗机构确诊精神障碍和精神疾病的患者自述的自己的病因的数据集。
+          或许从这份数据中，我们能更直观的看到，这些特别的人们到底在承受这什么样的痛苦。
+          从下面这幅饼图中不难看出，大多数心理问题和精神问题产生的原因来自于
+          <span class="stressed red">各种社会关系、家庭和经济</span>。
+          当然我们也看到了一些少数，比如自尊心、青春期、健康状况等等。
+        </p>
+
+        <iframe
+          id="factors"
+          src="/main/factors.html"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+
+        <p id="section3">
+          <br />
+        </p>
+
+        <h1 class="title">(三) 所以，不要为明天忧虑</h1>
+
+        <p>
+          2013年5月，第六十六届世界卫生大会通过了世界卫生组织的
+          <span class="stressed blue">《2013-2020年精神卫生综合行动计划》</span
+          >， 强调了要在社区环境中提供全面、综合的精神卫生和社会照护服务。
+          这被认为是全球范围内减少精神疾病的重要计划，并提出了一系列举措。
+        </p>
+        <p>
+          庆幸的是，截止目前，许多国家都在积极响应这一号召。
+          2022年4月27日，中国国务院办公厅印发了《“十四五”国民健康规划》，明确提出要全方位干预健康问题和影响因素，
+          完善心理健康和精神卫生服务，并提出了精神健康发展目标——到2025年，心理相关疾病发生的上升趋势减缓，
+          严重精神障碍得到有效控制。
+        </p>
+        <p>
+          英国国家健康服务平台（NHS）发布了《长期规划》、《心理健康五年前景计划》等文件，
+          并专门建立了心理健康服务平台和热线电话。
+        </p>
+        <p>
+          美国卫生与公众服务部发布了《2017-2022年度国家精神卫生计划》。
+          该文件概述了美国在心理健康服务、预防、治疗和研究方面的优先事项和目标。
+          同时国家精神卫生研究所（NIMH）也发布了一些关于心理健康研究的战略计划。
+        </p>
+
+        <div class="shell">
+          <div class="shell-content">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+
+        <p>
+          从以上几幅图中，我们也可以对目前各国的精神卫生和心理健康保障措施的实施现状窥见一斑。
+        </p>
+
+        <p>
+          随着全世界范围内的不断发展，对精神疾病的
+          <span class="stressed blue">重视</span>只会越来越强；
+          随着心理问题越来越称为被
+          <span class="stressed blue">正视</span
+          >的问题，对于这些神秘的疾病的恐惧和羞耻也会日益
+          <span class="stressed blue">消弭</span>； 随着我们的
+          <span class="stressed blue">预防和保护措施</span
+          >越来越完善，越来越多正在坠落的星星会被我们携手
+          <span class="stressed blue">托举</span>起来。
+        </p>
+        <p>
+          我们也有理由相信，在开篇所提到的那一位患有焦虑症和抑郁症的患者，能够在不远的未来，
+          获取到真正便利而又普及的医疗服务，重新拥抱一个美好的人生。
+        </p>
+        <h1 id="end">所以…不要为明天忧虑！</h1>
+        <p id="section4">
+          <br />
+        </p>
+
+        <div class="split-line"></div>
+        <br />
+
+        <p class="footnote">主要参考文献：</p>
+        <ol class="footnote">
+          <li>
+            E.R. Walker, R.E. McGee, B.G. Druss. (2015). Mortality in Mental
+            Disorders and Global Disease Burden Implications A Systematic Review
+            and Meta-analysis. JAMA PSYCHIATRY, (72),334-341.
+          </li>
+          <li>
+            R. C. Kessler et al. (2009). The global burden of mental disorders:
+            An update from the WHO World Mental Health (WMH) Surveys.
+            EPIDEMIOLOGIA E PSICHIATRIA SOCIALE-AN INTERNATIONAL JOURNAL FOR
+            EPIDEMIOLOGY AND PSYCHIATRIC SCIENCES, (18),23-33.
+          </li>
+          <li>
+            Yueqin Huang et al. (2019). Prevalence of mental disorders in China:
+            a cross-sectional epidemiological study. LANCET PSYCHIATRY, (6),
+            211-224.
+          </li>
+          <li>
+            R. S. Eid, A. R. Gobinath, L. A. M. Galea, (2019). Sex differences
+            in depression: Insights from clinical and preclinical studies.
+            PROGRESS IN NEUROBIOLOGY, (176), 86-102.
+          </li>
+        </ol>
+        <p class="footnote">数据集概况：</p>
+        <ul class="footnote">
+          <li>
+            95位患有精神疾病的患者的患病原因，
+            包括患者年龄、性别造成精神问题的诱发事件全貌、事件概述和对于该因素的抽象分类、心理学分类。
+            获取链接：
+            <a
+              href="https://www.kaggle.com/datasets/mdismielhossenabir/psychosocial-mental-health-analysis"
+              class="link"
+              target="_blank"
+              >前往Kaggle获取</a
+            >
+          </li>
+          <li>
+            6895条患有抑郁症、焦虑症的患者的聊天纪录文件。 获取链接：
+            <a
+              href="https://www.kaggle.com/datasets/sahasourav17/students-anxiety-and-depression-dataset"
+              class="link"
+              target="_blank"
+              >前往Kaggle获取</a
+            >。
+          </li>
+          <li>
+            用于文本分析的停用词数据集，包括哈工大停用词表、百度停用词表、四川大学机器智能实验室停用词库，
+            获取链接：
+            <a
+              href="https://github.com/endNone/stopwords"
+              class="link"
+              target="_blank"
+              >前往Github获取</a
+            >。
+          </li>
+          <li>
+            1990-2019年间各国焦虑症的患病率，包括分不同年龄段的患病率、国家gdp、标准年龄下不同性别患病率对比等数据。
+            源数据采集自Our world in data。 获取链接：
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.kaggle.com/datasets/jaffidantonio/prevalence-of-anxiety-disorders-1990-to-2019"
+              >前往Kaggle获取</a
+            >。
+          </li>
+          <li>
+            2016年各国在精神健康方面的医疗资源配置情况，包括医院等专门机构情况，医疗、护理、科研人员等的配备情况两个分表，
+            来自一个精神疾病与自杀的数据集， 获取链接：
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates"
+              >前往Kaggle获取</a
+            >。
+          </li>
+        </ul>
+
+        <p class="footnote">
+          <a
+            class="align-center no-underline"
+            href="https://github.com/YichenShen0103/py_dv"
+          >
+            <img data-src="./img/github.png" src="/img/loading.gif" />
+          </a>
+          &nbsp;
+          注：本数据可视化项目所有原数据、数据分析代码文件、中间结果文件以及数据报告均可在Github仓库提取，
+          项目地址：<a
+            class="link"
+            href="https://github.com/YichenShen0103/py_dv"
+            target="_blank"
+            >前往Github</a
+          >
+        </p>
+      </div>
+
+      <br />
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+      <br />
+    </main>
+  </body>
+</html>

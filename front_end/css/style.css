@@ -1,0 +1,414 @@
+.shell {
+  position: relative;
+  /* 相对定位 */
+  width: 90vw;
+  /* 宽度占视口宽度的60% */
+  height: 60vw;
+  /* 高度占视口高度的40% */
+  max-width: 950px;
+  /* 最大宽度为380像素 */
+  max-height: 625px;
+  /* 最大高度为250像素 */
+  margin: auto;
+  /* 外边距为0 */
+  color: white;
+  /* 字体颜色为白色 */
+  perspective: 1000px;
+  /* 透视效果，观察者与z=0平面的距离 */
+  transform-origin: center;
+  /* 变形原点为中心 */
+}
+
+/* 定义内容容器样式 */
+.shell-content {
+  display: flex;
+  /* 设置为弹性盒子布局 */
+  justify-content: center;
+  /* 主轴居中对齐 */
+  align-items: center;
+  /* 交叉轴居中对齐 */
+  position: absolute;
+  /* 绝对定位 */
+  width: 100%;
+  /* 宽度100% */
+  height: 100%;
+  /* 高度100% */
+  transform-origin: center;
+  /* 变形原点为中心 */
+  transform-style: preserve-3d;
+  /* 保持3D变换 */
+  transform: translateZ(-30vw) rotateY(0);
+  /* 变换：沿z轴平移-30vw，绕y轴旋转0度 */
+  animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  /* 动画：名称为carousel，持续时间9秒，无限循环，缓动函数为cubic-bezier(0.77, 0, 0.175, 1)，动画结束后保持最后状态 */
+}
+
+/* 定义项目样式 */
+.item {
+  position: absolute;
+  /* 绝对定位 */
+  width: 60vw;
+  /* 宽度占视口宽度的60% */
+  height: 40vw;
+  /* 高度占视口高度的40% */
+  max-width: 950px;
+  /* 最大宽度为380像素 */
+  max-height: 625px;
+  /* 最大高度为250像素 */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  /* 设置阴影 */
+  border-radius: 6px;
+  /* 边框圆角半径为6像素 */
+  background-size: cover;
+  /* 背景图片等比例缩放并覆盖整个容器 */
+  -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+  /* 创建倒影效果 */
+}
+
+/* 第一个项目样式 */
+.item:nth-child(1) {
+  background-image: url(../img/image_center.png);
+  /* 背景图片为01.jpg */
+  transform: rotateY(0) translateZ(35vw);
+  /* 变换：绕y轴旋转0度，沿z轴平移35vw */
+}
+
+/* 第二个项目样式 */
+.item:nth-child(2) {
+  background-image: url(../img/image_general.png);
+  /* 背景图片为02.jpg */
+  transform: rotateY(120deg) translateZ(35vw);
+  /* 变换：绕y轴旋转120度，沿z轴平移35vw */
+}
+
+/* 第三个项目样式 */
+.item:nth-child(3) {
+  background-image: url(../img/image_human.png);
+  /* 背景图片为03.jpg */
+  transform: rotateY(240deg) translateZ(35vw);
+  /* 变换：绕y轴旋转240度，沿z轴平移35vw */
+}
+
+/* 定义动画 */
+@keyframes carousel {
+  0%,
+  17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+    /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
+  }
+
+  27.5%,
+  45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+    /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
+  }
+
+  55%,
+  72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+    /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
+  }
+
+  82.5%,
+  100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+    /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
+  }
+}
+
+@font-face {
+  font-family: text;
+  src: url("../fonts/HYRunYuan-75W.ttf");
+}
+
+@font-face {
+  font-family: title;
+  src: url("../fonts/字魂白鸽天行体(商用需授权).TTF");
+}
+
+@font-face {
+  font-family: head;
+  src: url("../fonts/hk4e_zh-cn.ttf");
+}
+
+@font-face {
+  font-family: headder;
+  src: url("../fonts/华文细黑.TTF");
+}
+
+@-webkit-keyframes cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+body {
+  font-family: "text", sans-serif;
+  line-height: 1.5;
+  font-size: 36px;
+  margin-top: 0;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background: url(../img/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+iframe {
+  border: none;
+  margin: auto;
+  height: 600px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "headder";
+  background: #23232e;
+  height: 10vh;
+}
+
+sup {
+  font-size: 18px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  letter-spacing: 6px;
+  margin-left: 32px;
+}
+
+.moblie-menu {
+  display: block;
+  cursor: pointer;
+}
+
+.moblie-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.active {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: lighter;
+}
+
+.logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.active:hover {
+  opacity: 0.7;
+}
+
+.align-center {
+  vertical-align: middle;
+}
+
+.blue {
+  color: #1e90ff;
+}
+
+.center-iframe {
+  display: block;
+  float: none;
+  width: 50%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 20px;
+  text-indent: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cube1 {
+  background-color: #1e90ff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: cubemove 2.8s infinite ease-in-out;
+  animation: cubemove 2.8s infinite ease-in-out;
+}
+
+.cube2 {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: cubemove 2.8s infinite ease-in-out;
+  animation: cubemove 2.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -1.4s;
+  animation-delay: -1.4s;
+}
+
+.footnote {
+  font-family: head;
+  text-indent: 0em;
+  font-size: 24px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: underline;
+  color: #008b8b;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.split-line {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.stressed {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.title {
+  font-size: 72px;
+  font-family: "title";
+  text-align: center;
+  color: red;
+}
+
+.overall-title {
+  font-size: 108px;
+}
+
+.red {
+  color: red;
+}
+
+#end {
+  font-size: 72px;
+  font-family: "title";
+  text-align: center;
+  color: #1e90ff;
+}
+
+#factors {
+  display: block;
+  float: none;
+  border: none;
+  height: 600px;
+  width: 60%;
+}
+
+#gotop {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: none;
+  background-color: #999999;
+}
+
+#gotop span {
+  display: block;
+  width: 60px;
+  color: #dddddd;
+}
+
+#gotop span:hover {
+  color: #cccccc;
+}
+
+#gotop span {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+#header {
+  color: red;
+  font-family: "head";
+  font-style: italic;
+}
