@@ -11,5 +11,3 @@ $(function () {
     $("html,body").animate({ scrollTop: "0px" }, 200);
   });
 });
-
-var images = document.getElementsByTagName("img");
