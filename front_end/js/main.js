@@ -11,3 +11,6 @@ $(function () {
     $("html,body").animate({ scrollTop: "0px" }, 200);
   });
 });
+
+const observer = lozad();
+observer.observe();

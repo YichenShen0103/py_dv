@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>数据故事化</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"
+    ></script>
     <script async type="text/javascript" src="js/jquery.min.js"></script>
     <script async type="text/javascript" src="js/main.js"></script>
   </head>
@@ -97,10 +101,9 @@
         </p>
         <div>
           <iframe
-            class="center-iframe"
-            src="./main/map.html"
+            class="center-iframe lozad"
+            data-src="./main/map.html"
             scrolling="no"
-            loading="lazy"
             >></iframe
           >
         </div>
@@ -116,11 +119,10 @@
         </p>
         <div>
           <iframe
-            class="center-iframe"
-            src="./main/gdp.html"
+            class="center-iframe lozad"
+            data-src="./main/gdp.html"
             scrolling="no"
             width="100%"
-            loading="lazy"
           ></iframe>
         </div>
         <p>
@@ -134,10 +136,9 @@
         </p>
 
         <iframe
-          class="center-iframe"
-          src="./main/gender.html"
+          class="center-iframe lozad"
+          data-src="./main/gender.html"
           scrolling="no"
-          loading="lazy"
         ></iframe>
 
         <p>
@@ -157,12 +158,11 @@
         </p>
 
         <iframe
-          class="center-iframe"
-          src="./main/age.html"
+          class="center-iframe lozad"
+          data-src="./main/age.html"
           width="150%"
           height="600px"
           scrolling="no"
-          loading="lazy"
         ></iframe>
 
         <p>
@@ -227,9 +227,9 @@
 
         <iframe
           id="factors"
-          src="./main/factors.html"
+          class="lozad"
+          data-src="./main/factors.html"
           scrolling="no"
-          loading="lazy"
         ></iframe>
 
         <p id="section3">
