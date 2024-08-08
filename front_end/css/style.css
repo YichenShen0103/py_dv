@@ -5,9 +5,9 @@
   /* 宽度占视口宽度的60% */
   height: 60vw;
   /* 高度占视口高度的40% */
-  max-width: 950px;
+  max-width: 637px;
   /* 最大宽度为380像素 */
-  max-height: 625px;
+  max-height: 419px;
   /* 最大高度为250像素 */
   margin: auto;
   /* 外边距为0 */
@@ -51,9 +51,9 @@
   /* 宽度占视口宽度的60% */
   height: 40vw;
   /* 高度占视口高度的40% */
-  max-width: 950px;
+  max-width: 637px;
   /* 最大宽度为380像素 */
-  max-height: 625px;
+  max-height: 419px;
   /* 最大高度为250像素 */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   /* 设置阴影 */
@@ -179,7 +179,7 @@
 body {
   font-family: "text", sans-serif;
   line-height: 1.5;
-  font-size: 36px;
+  font-size: 24px;
   margin-top: 0;
   padding: 0;
   margin-left: 0;
@@ -194,8 +194,8 @@ html {
 
 iframe {
   border: none;
-  margin: auto;
-  height: 600px;
+  margin: 0 auto;
+  height: 500px;
 }
 
 nav {
@@ -204,22 +204,22 @@ nav {
   align-items: center;
   font-family: "headder";
   background: #23232e;
-  height: 10vh;
+  height: 8vh;
 }
 
 sup {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 13px;
 }
 
 .nav-list li {
-  letter-spacing: 6px;
-  margin-left: 32px;
+  letter-spacing: 4px;
+  margin-left: 21px;
 }
 
 .moblie-menu {
@@ -243,9 +243,9 @@ sup {
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 27px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #fff;
 }
 
@@ -264,13 +264,13 @@ sup {
 .center-iframe {
   display: block;
   float: none;
-  width: 50%;
-  height: 600px;
+  width: 80%;
+  height: 500px;
   margin: 0 auto;
 }
 
 .content {
-  margin: 20px;
+  margin: 13px;
   text-indent: 2em;
   margin-left: 10%;
   margin-right: 10%;
@@ -278,8 +278,8 @@ sup {
 
 .cube1 {
   background-color: #1e90ff;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -289,8 +289,8 @@ sup {
 
 .cube2 {
   background-color: red;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -307,7 +307,7 @@ sup {
 .footnote {
   font-family: head;
   text-indent: 0em;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .image-container {
@@ -331,8 +331,8 @@ sup {
 
 .spinner {
   margin: 100px auto;
-  width: 32px;
-  height: 32px;
+  width: 21px;
+  height: 21px;
   position: relative;
 }
 
@@ -345,18 +345,18 @@ sup {
 
 .stressed {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 27px;
 }
 
 .title {
-  font-size: 72px;
+  font-size: 48px;
   font-family: "title";
   text-align: center;
   color: red;
 }
 
 .overall-title {
-  font-size: 108px;
+  font-size: 72px;
 }
 
 .red {
@@ -364,7 +364,7 @@ sup {
 }
 
 #end {
-  font-size: 72px;
+  font-size: 48px;
   font-family: "title";
   text-align: center;
   color: #1e90ff;
@@ -375,7 +375,7 @@ sup {
   float: none;
   border: none;
   height: 600px;
-  width: 60%;
+  width: 100%;
 }
 
 #gotop {
