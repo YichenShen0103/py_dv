@@ -264,7 +264,7 @@ sup {
 .center-iframe {
   display: block;
   float: none;
-  width: 100%;
+  width: 900px;
   height: 600px;
   margin: 0 auto;
 }
@@ -375,7 +375,7 @@ sup {
   float: none;
   border: none;
   height: 600px;
-  width: 100%;
+  width: 1150px;
 }
 
 #gotop {
