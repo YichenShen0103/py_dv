@@ -13,16 +13,3 @@ $(function () {
 });
 
 var images = document.getElementsByTagName("img");
-
-window.addEventListener("scroll", (e) => {
-  ergodic();
-});
-function ergodic() {
-  for (let i of images) {
-    if (i.offsetTop <= window.innerHeight + window.scrollY) {
-      let trueSrc = i.getAttribute("data-src");
-      i.setAttribute("src", trueSrc);
-    }
-  }
-}
-ergodic();
