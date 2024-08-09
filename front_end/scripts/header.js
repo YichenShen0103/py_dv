@@ -1,3 +1,4 @@
+// Scroll to top
 $(function () {
   $(window).scroll(function () {
     var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
@@ -11,6 +12,3 @@ $(function () {
     $("html,body").animate({ scrollTop: "0px" }, 200);
   });
 });
-
-const observer = lozad();
-observer.observe();

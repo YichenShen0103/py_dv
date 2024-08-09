@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>数据故事化</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"
-    ></script>
-    <script async type="text/javascript" src="js/jquery.min.js"></script>
-    <script async type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cube.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
   </head>
   <body>
     <header>
@@ -102,7 +100,7 @@
         <div>
           <iframe
             class="center-iframe lozad"
-            data-src="./main/map.html"
+            data-src="./html/map.html"
             scrolling="no"
             >></iframe
           >
@@ -120,7 +118,7 @@
         <div>
           <iframe
             class="center-iframe lozad"
-            data-src="./main/gdp.html"
+            data-src="./html/gdp.html"
             scrolling="no"
             width="100%"
           ></iframe>
@@ -137,7 +135,7 @@
 
         <iframe
           class="center-iframe lozad"
-          data-src="./main/gender.html"
+          data-src="./html/gender.html"
           scrolling="no"
         ></iframe>
 
@@ -159,7 +157,7 @@
 
         <iframe
           class="center-iframe lozad"
-          data-src="./main/age.html"
+          data-src="./html/age.html"
           width="150%"
           height="600px"
           scrolling="no"
@@ -228,7 +226,7 @@
         <iframe
           id="factors"
           class="lozad"
-          data-src="./main/factors.html"
+          data-src="./html/factors.html"
           scrolling="no"
         ></iframe>
 
@@ -261,10 +259,21 @@
         </p>
 
         <div class="shell">
-          <div class="shell-content">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+          <ui class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+          </ui>
+          <ui class="min-images">
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+            <li class="min"></li>
+          </ui>
+          <div class="button">
+            <div class="button-left"><</div>
+            <div class="button-right">></div>
           </div>
         </div>
 
@@ -398,5 +407,13 @@
       </div>
       <br />
     </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"
+    ></script>
+    <script async type="text/javascript" src="./scripts/carousel.js"></script>
+    <script async type="text/javascript" src="./scripts/header.js"></script>
+    <script async type="text/javascript" src="./scripts/jquery.min.js"></script>
+    <script async type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
