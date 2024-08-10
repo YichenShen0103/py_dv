@@ -15,10 +15,10 @@
         - 关于心理健康问题防治措施和解决方案的数据集：https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 - py：用于存放数据处理及可视化所用的代码文件
     - 本目录下共两个子目录，分别用于存放python源文件和jupyter notebook文件。
-    - 注意：本项目使用的pyecharts的版本为1.8.1，请确保安装正确版本。
+    - ⚠注意：本项目使用的pyecharts的版本为1.8.1，请确保安装正确版本。
 - main：用于存放可视化结果文档及数据分析报告文件。
 - front_end：用于存放前端页面文件，包括前端页面所用的各种静态资源文件。
-    - 警告：运行前端文件必要的配置环境为node.js、npm、webpack、vue.js等，并请保证在vscode下利用Live Server插件运行index.html文件，否则易导致渲染异常。
+    - 本目录下有若干子目录，分别存放前端页面所需的html、css、js、图片、字体等静态资源文件。
 
 ## 运行和使用说明
 确保安装git和其他必要运行环境的情况下，使用命令：
@@ -29,7 +29,17 @@
 
 运行结果位于自动生成的/result路径中，不会覆盖/main中的示例文件。
 
-注意：本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud、nltk、textblob等运行环境。
+运行前端页面的方式可以有三种：
+- 确保front_end目录完整的情况下直接打开index.html文件；
+- 确保front_end目录完整的情况下使用vscode编辑器的live server插件运行index.html；
+- 直接访问：https://yichenshen0103.github.io/py_dv/front_end/#
+  
+⚠警告：
+
+- 本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud、nltk、textblob等运行环境。
+- 经过测试，前端页面在macOS Sonoma，Windows 10/11下的chrome、firefox、edge、safari等主流浏览器中均可正常运行。其他系统和浏-览器可能存在兼容性问题。
+- 前端页面部署在github pages上，建议使用VPN，否则可能存在延迟或访问不稳定问题。
+- 本项目仅供学习交流使用，请勿用于商业用途。
 
 ## 声明
 本项目自2024年8月20日起停止更新。
