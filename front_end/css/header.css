@@ -10,9 +10,10 @@ header * {
 }
 
 header .logo {
-  font-size: 27px;
+  font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-family: "title";
   color: #fff;
 }
 
@@ -23,6 +24,11 @@ header li {
 header a {
   text-decoration: none;
   color: #fff;
+}
+
+header p {
+  color: #fff;
+  cursor: pointer;
 }
 
 .navbar {
@@ -59,6 +65,14 @@ header a {
 }
 
 .navbar .nav ul > li > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+}
+
+.navbar .nav ul > li > p {
   display: block;
   height: 100%;
   width: 100%;
