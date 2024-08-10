@@ -33,6 +33,10 @@ header a {
   align-items: center;
   background-color: #23232e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .navbar .nav {
