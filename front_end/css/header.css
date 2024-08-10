@@ -142,7 +142,7 @@ header a {
   right: 40px;
   border-radius: 10px 10px 10px 10px;
   text-decoration: none;
-  /*   display: none; */
+  display: none;
   background-color: #999999;
 }
 
