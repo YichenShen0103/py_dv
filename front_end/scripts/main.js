@@ -11,3 +11,7 @@ $(function () {
     $("html,body").animate({ scrollTop: "0px" }, 200);
   });
 });
+
+// Lazy load
+const observer = lozad();
+observer.observe();
