@@ -1,7 +1,27 @@
+@font-face {
+  font-family: text;
+  src: url("../fonts/HYRunYuan-75W.ttf");
+}
+
+@font-face {
+  font-family: title;
+  src: url("../fonts/字魂白鸽天行体(商用需授权).TTF");
+}
+
+@font-face {
+  font-family: head;
+  src: url("../fonts/hk4e_zh-cn.ttf");
+}
+
+@font-face {
+  font-family: headder;
+  src: url("../fonts/华文细黑.TTF");
+}
+
 body {
   font-family: "text", sans-serif;
   line-height: 1.5;
-  font-size: 36px;
+  font-size: 24px;
   margin-top: 0;
   padding: 0;
   margin-left: 0;
@@ -10,18 +30,18 @@ body {
   background-size: cover;
 }
 
+sup {
+  font-size: 12px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 iframe {
   border: none;
-  margin: auto;
-  height: 600px;
-}
-
-sup {
-  font-size: 18px;
+  margin: 0 auto;
+  height: 500px;
 }
 
 .align-center {
@@ -35,13 +55,13 @@ sup {
 .center-iframe {
   display: block;
   float: none;
-  width: 900px;
-  height: 600px;
+  width: 80%;
+  height: 500px;
   margin: 0 auto;
 }
 
 .content {
-  margin: 20px;
+  margin: 13px;
   text-indent: 2em;
   margin-left: 10%;
   margin-right: 10%;
@@ -50,7 +70,7 @@ sup {
 .footnote {
   font-family: head;
   text-indent: 0em;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .image-container {
@@ -74,8 +94,8 @@ sup {
 
 .spinner {
   margin: 100px auto;
-  width: 32px;
-  height: 32px;
+  width: 21px;
+  height: 21px;
   position: relative;
 }
 
@@ -88,18 +108,18 @@ sup {
 
 .stressed {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 27px;
 }
 
 .title {
-  font-size: 72px;
+  font-size: 48px;
   font-family: "title";
   text-align: center;
   color: red;
 }
 
 .overall-title {
-  font-size: 108px;
+  font-size: 72px;
 }
 
 .red {
@@ -107,7 +127,7 @@ sup {
 }
 
 #end {
-  font-size: 72px;
+  font-size: 48px;
   font-family: "title";
   text-align: center;
   color: #1e90ff;
@@ -118,7 +138,7 @@ sup {
   float: none;
   border: none;
   height: 600px;
-  width: 1150px;
+  width: 100%;
 }
 
 #header {

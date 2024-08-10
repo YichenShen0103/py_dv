@@ -4,27 +4,60 @@
     <meta charset="UTF-8" />
     <title>数据故事化</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/cube.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/carousel.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <p class="logo">数据故事化</p>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      <div class="navbar">
+        <a class="logo" href="#">数据故事化</a>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="https://github.com/YichenShen0103/py_dv" target="_self"
+                >主页</a
+              >
+            </li>
+            <li>
+              <a href="#">下载</a>
+              <ol>
+                <li>
+                  <a href="./downloads/dataset.zip" download="dataset.zip"
+                    >数据集</a
+                  >
+                </li>
+                <li>
+                  <a href="./downloads/code.zip" download="code.zip">源代码</a>
+                </li>
+                <li>
+                  <a href="./downloads/report.pdf" download="report.pdf"
+                    >分析报告PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./downloads/report.docx"
+                    download="report.docx"
+                    download="数据分析报告.docx"
+                    >分析报告WORD</a
+                  >
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="#">页面导航</a>
+              <ol>
+                <li><a href="#section1">趋势</a></li>
+                <li><a href="#section2">洞见</a></li>
+                <li><a href="#section3">未来</a></li>
+                <li><a href="#section4">关于</a></li>
+              </ol>
+            </li>
+            <li class="underline"></li>
+          </ul>
         </div>
-        <ul class="nav-list">
-          <li><a class="active" href="#section1">趋势</a></li>
-          <li><a class="active" href="#section2">洞察</a></li>
-          <li><a class="active" href="#section3">未来</a></li>
-          <li><a class="active" href="#section4">关于</a></li>
-        </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <div>
@@ -55,7 +88,7 @@
           文明助力人类建起了规模空前的大型城市，恢弘的摩天大楼，然而——
         </p>
 
-        <h1 class="title overall-title">高塔下的阴影里，光明未曾到达</h1>
+        <h1 class="title overall-title">高塔下的阴影，光明未曾到达</h1>
 
         <p>
           一篇发表在医学界最具影响力的期刊——《柳叶刀》上的
@@ -97,15 +130,17 @@
         <p>
           那么，精神疾病的发病真的有那么神秘吗？或许也只有从数据中，我们能窥得一些奥秘。
         </p>
+
         <div>
           <iframe
             class="center-iframe lozad"
-            data-src="./html/map.html"
+            data-src="./main/map.html"
             scrolling="no"
+            width="80%"
+            align="center"
             >></iframe
           >
         </div>
-
         <p>
           这是一幅是全球焦虑症患病率的热力地图，
           不难发现，焦虑症的患病率似乎和经济发展有着千丝万缕的关系，越发达的地区，象征着焦虑和抑郁的红色就越是频繁的出现。
@@ -118,7 +153,7 @@
         <div>
           <iframe
             class="center-iframe lozad"
-            data-src="./html/gdp.html"
+            data-src="./main/gdp.html"
             scrolling="no"
             width="100%"
           ></iframe>
@@ -135,7 +170,7 @@
 
         <iframe
           class="center-iframe lozad"
-          data-src="./html/gender.html"
+          data-src="./main/gender.html"
           scrolling="no"
         ></iframe>
 
@@ -157,7 +192,7 @@
 
         <iframe
           class="center-iframe lozad"
-          data-src="./html/age.html"
+          data-src="./main/age.html"
           width="150%"
           height="600px"
           scrolling="no"
@@ -187,8 +222,8 @@
 
         <div class="image-container">
           <img
-            loading="lazy"
             src="./img/wordcloud.png"
+            loading="lazy"
             alt="焦虑症患者聊天记录词云图"
           />
         </div>
@@ -226,7 +261,7 @@
         <iframe
           id="factors"
           class="lozad"
-          data-src="./html/factors.html"
+          data-src="./main/factors.html"
           scrolling="no"
         ></iframe>
 
@@ -276,6 +311,8 @@
             <div class="button-right">></div>
           </div>
         </div>
+
+        <br />
 
         <p>
           从以上几幅图中，我们也可以对目前各国的精神卫生和心理健康保障措施的实施现状窥见一斑。
@@ -400,20 +437,19 @@
         </p>
       </div>
 
-      <br />
       <div class="spinner">
         <div class="cube1"></div>
         <div class="cube2"></div>
       </div>
       <br />
+      <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+      <script type="text/javascript" src="./scripts/lozad.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"
+      ></script>
+      <script type="text/javascript" src="./scripts/carousel.js"></script>
+      <script type="text/javascript" src="./scripts/main.js"></script>
     </main>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.js"
-    ></script>
-    <script async type="text/javascript" src="./scripts/carousel.js"></script>
-    <script async type="text/javascript" src="./scripts/header.js"></script>
-    <script async type="text/javascript" src="./scripts/jquery.min.js"></script>
-    <script async type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>

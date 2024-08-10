@@ -18,9 +18,7 @@
     - 注意：本项目使用的pyecharts的版本为1.8.1，请确保安装正确版本。
 - main：用于存放可视化结果文档及数据分析报告文件。
 - front_end：用于存放前端页面文件，包括前端页面所用的各种静态资源文件。
-    - 本目录下共五个子目录，分别存放前端页面的html文件、css文件、js文件、图片文件、字体文件。
-    - 注意：前端页面已经部署到GitHub Pages上线，比起直接运行本地文件，更推荐直接访问https://yichenshen0103.github.io/py_dv/front_end/#
-    - 警告：运行前端文件必要的配置环境为node.js、npm等，并请保证在vscode下利用Live Server插件运行index.html文件，否则易导致渲染异常。
+    - 警告：运行前端文件必要的配置环境为node.js、npm、webpack、vue.js等，并请保证在vscode下利用Live Server插件运行index.html文件，否则易导致渲染异常。
 
 ## 运行和使用说明
 确保安装git和其他必要运行环境的情况下，使用命令：
