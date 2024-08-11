@@ -51,6 +51,7 @@
   bottom: 20px;
   width: 40%;
   right: 30%;
+  z-index: 9;
 }
 
 .min {
