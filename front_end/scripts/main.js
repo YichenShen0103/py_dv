@@ -24,7 +24,7 @@ $(window).on("load", function () {
     $(".loader-container").fadeOut("slow", function () {
       enableScroll();
     });
-  }, 3000);
+  }, 1000);
 });
 
 function disableScroll() {
