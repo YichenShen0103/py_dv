@@ -7,7 +7,7 @@ header * {
   margin: 0;
   padding: 0;
   font-family: "Microsoft YaHei";
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .loader-container {
@@ -20,7 +20,7 @@ header * {
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .loader {
@@ -88,7 +88,7 @@ header .logo {
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "title";
+  font-family: "logo";
   color: #fff;
 }
 
