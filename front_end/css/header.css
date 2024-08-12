@@ -17,7 +17,7 @@ header * {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #252525;
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -253,4 +253,58 @@ header p {
   font-size: 40px;
   text-align: center;
   margin-top: 4px;
+}
+
+.loading-container {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 10000;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.loading {
+  color: #fff;
+  font-family: "text";
+  display: none;
+  margin: 0 auto;
+}
+
+#resources::before,
+#resources::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 8px;
+  background-color: #2f4f4f;
+  border-radius: 3px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+#resources::before {
+  box-shadow: 0 0 6px rgba(75, 207, 250, 0.2);
+}
+
+#resources::after {
+  background-image: linear-gradient(90deg, #a9a9a9, #fff);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-name: loading;
+}
+
+@keyframes loading {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30%;
+  }
 }

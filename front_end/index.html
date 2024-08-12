@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>高塔下的阴影</title>
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/loading.js"></script>
     <link rel="icon" href="./img/icon3.jpg" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
@@ -14,6 +16,10 @@
       <div class="navbar">
         <div class="loader-container">
           <span class="loader"><span class="loader-inner"></span> </span>
+          <div class="loading-container">
+            <span class="loading" id="resources">加载资源中...</span>
+            <span class="loading" id="finish">加载完毕!</span>
+          </div>
         </div>
         <p class="logo">高塔下的阴影</p>
         <div class="nav">
@@ -446,7 +452,6 @@
         <div class="cube2"></div>
       </div>
       <br />
-      <script type="text/javascript" src="./scripts/jquery.min.js"></script>
       <script type="text/javascript" src="./scripts/lozad.min.js"></script>
       <script
         type="text/javascript"
