@@ -8,7 +8,7 @@ import numpy as np
 import pyecharts
 print(pyecharts.__version__)
 
-root=os.path.abspath("../..")
+root=os.path.abspath("")
 
 #以下模块用于处理焦虑症发病率随年龄的变化趋势
 df_age = pd.read_csv(root+'\\data\\prevalence\\anxiety-disorders-prevalence-by-age.csv')

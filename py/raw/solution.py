@@ -3,7 +3,7 @@ import numpy as np
 import pyecharts.options as opts
 from pyecharts.charts import *
 import os
-root=os.path.abspath("../..")
+root=os.path.abspath("")
 
 df_fclty=pd.read_csv(root+'\\data\\solutions\\Facilities.csv')
 df_human=pd.read_csv(root+'\\data\\solutions\\Human Resources.csv')

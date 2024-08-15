@@ -7,7 +7,7 @@ import re
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from textblob import TextBlob
 nltk.download('vader_lexicon')
-root=os.path.abspath("../..")
+root=os.path.abspath("")
 
 df=pd.read_excel(root+"\\data\\messages\\dataset.xlsx")
 df.dropna(inplace=True)

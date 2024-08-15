@@ -5,7 +5,7 @@ import os
 from pyecharts.charts import *
 from pyecharts.options import global_options
 import pyecharts.options as opts
-root=os.path.abspath("../..")
+root=os.path.abspath("")
 
 df=pd.read_csv(root+'\\data\\factors\\Psychosocial_Health_Analysis.csv')
 df.dropna(inplace=True)
