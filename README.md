@@ -29,8 +29,7 @@
 
 运行结果位于自动生成的/result路径中，不会覆盖/main中的示例文件。
 
-运行前端页面的方式可以有三种：
-- 确保front_end目录完整的情况下直接打开index.html文件；
+运行前端页面的方式可以有两种：
 - 确保front_end目录完整的情况下使用vscode编辑器的live server插件运行index.html；
 - 直接访问：https://yichenshen0103.github.io/py_dv/front_end/#
   
@@ -38,6 +37,7 @@
 
 - 本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud、nltk、textblob等运行环境。
 - 经过测试，前端页面在macOS Sonoma，Windows 10/11下的chrome、firefox、edge、safari等主流浏览器中均可正常运行。其他系统和浏-览器可能存在兼容性问题。
+- 请勿直接打开index.html，避免加载和显示问题。
 - 前端页面部署在github pages上，建议使用VPN，否则可能存在延迟或访问不稳定问题。
 - 本项目仅供学习交流使用，请勿用于商业用途。
 
