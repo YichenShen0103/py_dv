@@ -23,7 +23,9 @@
 ## 运行和使用说明
 确保安装git和其他必要运行环境的情况下，使用命令：
 
-    git clone https://github.com/YichenShen0103/py_dv.git
+```shell
+git clone https://github.com/YichenShen0103/py_dv.git
+```
 
 并运行py目录下的所有python源文件或jupyter notebook文件（任选其一）即可。
 
@@ -33,6 +35,7 @@
 - 确保front_end目录完整的情况下使用vscode编辑器的live server插件运行index.html；
 - 直接访问：https://yichenshen0103.github.io/py_dv/front_end/#
   
+
 ⚠警告：
 
 - 本项目建议运行在windows系统下的anaconda环境中，并确保安装了pandas、numpy、matplotlib、pyecharts、jupyter notebook、wordcloud、nltk、textblob等运行环境。
