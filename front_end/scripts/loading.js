@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 $(window).on("load", function () {
   var resources = document.getElementById("resources");
   setTimeout(function () {
-    resources.textContent = "检测环境中...";
+    resources.textContent = "Detecting environment...";
     setTimeout(function () {
       $("#resources").hide();
       $("#finish").show();
